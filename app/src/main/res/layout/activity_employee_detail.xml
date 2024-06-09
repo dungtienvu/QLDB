@@ -1,0 +1,88 @@
+<!-- res/layout/activity_employee_detail.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".EmployeeDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Chi tiết nhân viên"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextEmployeeId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Mã nhân viên" />
+
+        <EditText
+            android:id="@+id/editTextEmployeeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Họ và tên" />
+
+        <EditText
+            android:id="@+id/editTextEmployeePosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Chức vụ (tuỳ chọn)" />
+
+        <EditText
+            android:id="@+id/editTextEmployeeEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/editTextEmployeeImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ảnh nhân viên"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextEmployeePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại" />
+
+        <EditText
+            android:id="@+id/editTextEmployeeUnitId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã đơn vị" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <Button
+                android:id="@+id/btnUpdateEmployee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sửa" />
+
+            <Button
+                android:id="@+id/btnDeleteEmployee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Xoá" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
